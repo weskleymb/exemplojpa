@@ -12,7 +12,7 @@ import javax.persistence.ManyToOne;
 public class Cliente implements Serializable {
     
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nome;
     @Column(unique = true)

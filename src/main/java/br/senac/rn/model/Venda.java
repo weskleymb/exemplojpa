@@ -16,7 +16,7 @@ import javax.persistence.TemporalType;
 public class Venda implements Serializable {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     @ManyToOne
     private Cliente cliente;
