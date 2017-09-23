@@ -18,6 +18,11 @@ public class Sexo implements Serializable {
     public Sexo() {
     }
 
+    public Sexo(String nome, char sigla) {
+        this.nome = nome;
+        this.sigla = sigla;
+    }
+
     public Sexo(int id, String nome, char sigla) {
         this.id = id;
         this.nome = nome;

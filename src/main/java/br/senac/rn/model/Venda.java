@@ -56,6 +56,9 @@ public class Venda implements Serializable {
     }
 
     public float getValor() {
+        produtos.forEach((produto) -> {
+            valor += produto.getPreco();
+        });
         return valor;
     }
 
@@ -69,10 +72,6 @@ public class Venda implements Serializable {
 
     public void setProdutos(List<Produto> produtos) {
         this.produtos = produtos;
-    }
-
-    public void setValor(float valor) {
-        this.valor = valor;
     }
     
     public Calendar getData() {
